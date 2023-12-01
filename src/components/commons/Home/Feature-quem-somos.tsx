@@ -24,13 +24,13 @@ export const QuemSomos = () => {
           principalmente nesses momentos […]
           </h2>
           </div>
-          <div className='relative'>
+          <div className='flex'>
             <Image
               src='/quemsomos.jpg'
               alt='Quem Somos'
               width={500}
               height={500}
-              className='rounded-full'
+              className='rounded'
             />
           </div>
       </main>

@@ -24,22 +24,22 @@ export const Header = () => {
 
   return (
     <header 
-    className={`${roboto.className} bg-h-blue-900 text-sm flex py-3 px-5 justify-between items-center sticky top-0 z-28`}
+    className={`${roboto.className} bg-yellow-300 bg-h-blue-800 text-sm flex py-3 px-5 justify-between items-center sticky top-0 z-28`}
     >
     <Link href="/">
-    <Image src="/favicon.svg" width={55} height={55} alt="Ícone da Letra H, Logo de Antonio" />
+    <Image src="/favicon.svg" width={55} height={55} alt="Doe MT" />
     </Link>
     <button className="p-1 md:hidden" onClick={openMenu}>
     <MenuIcon className="h-black-500 w-10 h-10" />
     </button>
-    <nav className="hidden md:flex items-center gap-10 text-md">
-      <Link href="/">Home</Link>
-      <Link href="/">Quem Somos</Link>
-      <Link href="/">Quem Recebe</Link>
-      <Link href="/">Cadastro</Link>
-      <Link href="/">Blog</Link>
-      <Link href="/">Contato</Link>
-      <Link href="/">Faça uma Doação</Link>
+    <nav className="hidden md:flex items-center gap-1 text-md">
+      <Link className="hover:bg-yellow-500 rounded-xl px-4 py-1" href="/">Home</Link>
+      <Link className="hover:bg-yellow-500 rounded-xl px-4 py-1" href="/">Quem Somos</Link>
+      <Link className="hover:bg-yellow-500 rounded-xl px-4 py-1" href="/">Quem Recebe</Link>
+      <Link className="hover:bg-yellow-500 rounded-xl px-4 py-1" href="/">Cadastro</Link>
+      <Link className="hover:bg-yellow-500 rounded-xl px-4 py-1" href="/">Blog</Link>
+      <Link className="hover:bg-yellow-500 rounded-xl px-4 py-1" href="/">Contato</Link>
+      <Link className="hover:bg-yellow-500 bg-blue-400 rounded-xl px-4 py-1" href="/">Faça uma Doação</Link>
     </nav>
     <Menu  isVisible={isMenuOpen} onClose={closeMenu}/>
     
