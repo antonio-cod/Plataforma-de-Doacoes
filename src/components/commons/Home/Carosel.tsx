@@ -17,12 +17,12 @@ export const Carosel = ()=>  {
   }, []);
 
    const handlePrevPage = () => {
-  //   setPage(prev => ((prev-1) <=0 ? 7 : prev-1));
+   setCarosel(prev => ((prev-1) <=0 ? 7 : prev-1));
   console.log("prev")
   }
 
   const handleNextPage = () => {
-  //   setPage(prev => ((prev+1) >= 8 ? 1 : prev+1));
+  setCarosel(prev => ((prev+1) >= 8 ? 1 : prev+1));
   console.log("next")
   }
 
@@ -30,16 +30,16 @@ export const Carosel = ()=>  {
     <main className="relative flex h-[calc(100vh-70px)] w-screen flex-col
     justify-center items-center">
 
-      <div className="absolute w-full h-full">
+      <div className="flex w-full h-full">
         
-         {/* <Image 
+       <Image 
         className="w-full h-full object-cover object-center" 
         sizes="100vw"
         alt="Image" 
-        src="https:localhost:8080/doemtx/src/assets/img_1.png"
-        width={50} 
-        height={50}
-        />  */}
+        src="/cta2.jpg"
+        width={400} 
+        height={300}
+        /> 
         
         
         

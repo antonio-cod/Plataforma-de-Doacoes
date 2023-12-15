@@ -3,17 +3,23 @@
  import { FaTwitter } from "react-icons/fa";
  import { FaLinkedin } from "react-icons/fa";
  import { FaYoutube } from "react-icons/fa";
+ import { Roboto } from 'next/font/google';
 
+ const roboto = Roboto({
+	 subsets: ['latin'],
+	 weight: '400',
+ });
+ 
 export const Footer = () => {
 	return (
 		<>
-			<footer className="bg-yellow-300 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
+			<footer className="bg-pink-500 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
 				<div className="p-5">  
 					<ul>
-						<p className="text-blue-600 font-bold text-3xl pb-6">
-						Faça sua doação-<span className="text-blue-600">MT</span>
+						<p className="text-gray-900 font-bold text-3xl pb-6">
+						Faça sua doação-<span className="text-gray-900">MT</span>
 						</p>
-						<li className="text-gray-800 text-md pb-2 font-semibold">
+						<li className={`${roboto.className}text-gray-800 mb-12`}>
 						Você pode conhecer todas as entidades que fazem pare da plataforma,
 						escolher uma ou mais, ajudar na realização dos projetos com sua doação.
 						Você pode ser um agente transformador que fomenta a arte e promove
@@ -31,26 +37,26 @@ export const Footer = () => {
 				</div>
 				<div className="p-5">
 					<ul>
-						<p className="text-blue-600 font-bold text-2xl pb-4">Entidades</p>
-						<li className="text-gray-800 text-md pb-7 font-semibold hover:text-blue-600 cursor-pointer">
+						<p className="text-gray-900 font-bold text-2xl pb-4">Entidades</p>
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 							Instituto Casarão das Artes  
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 						Instituto Joana Darc
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 							Associação Entre Patas
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 							Flor de Atalaia
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 						Associação Barranco Alto II
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 						Grupo Fraterno Associação Espírita Joanna de Ângelis
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 						ASCA – Associação Social Civil Abaiuc
 						</li>
 					
@@ -58,40 +64,40 @@ export const Footer = () => {
 				</div>
 				<div className="p-5">
 					<ul>
-						<p className="text-blue-600 font-bold text-2xl pb-4">Equipe</p>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<p className="text-gray-900 font-bold text-2xl pb-4">Equipe</p>
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 							Desenvolvimento
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 							Produção
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 						Arte/Visual
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 							Acessoria de Empresa
 						</li>
 					</ul>
 				</div>
 				<div className="p-5">
 					<ul>
-						<p className="text-blue-600 font-bold text-2xl pb-4">Suporte</p>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<p className="text-gray-900 font-bold text-2xl pb-4">Suporte</p>
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 							Contactos
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 							Duvidas
 						</li>
-						<li className="text-gray-800 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className={`${roboto.className}text-gray-800 mb-5 hover:text-gray-200 cursor-pointer`}>
 							Fale Conosco
 						</li>
 					</ul>
 				</div>
 			</footer>
-			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-800">
-				<h1 className="text-blue-600 font-semibold">
+			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-600">
+				<h1 className="text-gray-200 hover:text-pink-500 font-semibold">
 					© 2023 DOE MT Direitos Reservado - 
-					<span className="hover:text-blue-600 font-semibold cursor-pointer">
+					<span className="hover:text-pink-500 font-semibold cursor-pointer">
 						Doe MT
 					</span>
 				</h1>

@@ -12,7 +12,7 @@ export const Menu = ({ isVisible, onClose }: MenuProps) => {
   return (
     <div 
     className={`${isVisible ? 'flex' : 'hidden'}
-      fixed inset-0 w-full h-full bg-black bg-opacity-40 backdrop-blur-sm md:hidden
+      fixed inset-0 w-full h-full bg-white bg-opacity-40 backdrop-blur-sm md:hidden
     `}
     onClick={onClose}
     >
@@ -43,7 +43,7 @@ export const Menu = ({ isVisible, onClose }: MenuProps) => {
           Blog</Link>
         <Link href="/" onClick={onClose}>
           Contato</Link>
-        <Link href="/" onClick={onClose}>
+        <Link href="/" className='bg-gray-300 rounded-xl px-4 py-1' onClick={onClose}>
           Faça uma Doação</Link>
       </nav>
     </div>
