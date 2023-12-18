@@ -10,58 +10,55 @@ export const Carosel = ()=>  {
   useEffect(() => {
 
     let int = setInterval(() => {
-       setCarosel(prev =>((prev+1) >= 8 ? 1 : prev+1));
-      },5000);
+       setCarosel(prev =>((prev+1) >= 3 ? 1 : prev+1));
+      },10000);
 
    return () => clearInterval(int);
   }, []);
 
    const handlePrevPage = () => {
-   setCarosel(prev => ((prev-1) <=0 ? 7 : prev-1));
-  console.log("prev")
+   setCarosel(prev => ((prev-1) <= 0 ? 2 : prev-1));
+ 
   }
 
   const handleNextPage = () => {
-  setCarosel(prev => ((prev+1) >= 8 ? 1 : prev+1));
-  console.log("next")
+  setCarosel(prev => ((prev+1) >= 3 ? 1 : prev+1));
+  
   }
 
   return (
-    <main className="relative flex h-[calc(100vh-70px)] w-screen flex-col
+    <main className="relative flex h-[calc(100vh-70px)] flex-col
     justify-center items-center">
 
-      <div className="flex w-full h-full">
-        
+      <div className="max-w-screen-lg">
        <Image 
-        className="w-full h-full object-cover object-center" 
-        sizes="100vw"
-        alt="Image" 
-        src="/cta2.jpg"
-        width={400} 
-        height={300}
+        className="object-cover object-center" 
+       
+        fill alt="Image" 
+        src={`/cta_${carosel}.jpg`}
+        
         /> 
         
-        
-        
+
         <div className="absolute bottom-8 left-10 py-3 px-6 bg-[#0000007c]
         rounded-lg">
-          <h2 className="text-4x1">Beautiful landscape{}</h2>
-          <p className="text-2x1 mt-4 text-purple-200">The magic of natural</p>
+          <h2 className="text-4x1">Instituições do estado de Mato Grosso {carosel} </h2>
+          <p className="text-2x1 mt-4 text-purple-200">VEJA MAIS</p>
         </div>
 
-      </div>
-      <div onClick={handlePrevPage} className="z-10 fixed bottom-1/2 left-4 text-2x1 font-semibold">
+      
+      <div onClick={handlePrevPage} className="absolute bottom-1/2 left-4 text-2x1 font-semibold">
         <span className="inline-bloc transition-transform hover:trabslate-x-1
         motion-reduce:transform-none cursor-pointer hover:text-violet-500">&lt;-
         </span>
       </div>
 
-      <div onClick={handleNextPage} className="z-10 fixed bottom-1/2 right-4 text-2x1 font-semibold">
+      <div onClick={handleNextPage} className="absolute bottom-1/2 right-4 text-2x1 font-semibold">
         <span className="inline-bloc transition-transform hover:trabslate-x-1
         motion-reduce:transform-none cursor-pointer hover:text-violet-500">-&gt;
         </span>
       </div> 
-
+      </div>
     </main>
   )
 

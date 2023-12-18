@@ -22,7 +22,7 @@ export const Menu = ({ isVisible, onClose }: MenuProps) => {
         >
         <div className="flex justify-between mb-5">
         <Link href="/">
-          <Image src="/favicon.svg" width={55} height={55} alt="Icone do menu">
+          <Image src="/logo.jpg" width={55} height={55} alt="Icone do menu">
           </Image>
         </Link>
         <button onClick={onClose}>
@@ -43,7 +43,7 @@ export const Menu = ({ isVisible, onClose }: MenuProps) => {
           Blog</Link>
         <Link href="/" onClick={onClose}>
           Contato</Link>
-        <Link href="/" className='bg-gray-300 rounded-xl px-4 py-1' onClick={onClose}>
+        <Link href="/" className='bg-green-500 rounded-xl px-4 py-1' onClick={onClose}>
           Faça uma Doação</Link>
       </nav>
     </div>

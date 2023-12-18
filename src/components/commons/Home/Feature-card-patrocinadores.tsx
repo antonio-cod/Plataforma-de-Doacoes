@@ -25,13 +25,13 @@ function Patrocinadores() {
 
       <div className='mx-auto grid justify-center items-center text-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3 p-4'>
         <div className='overflow-hidden rounded-lg border border-gray-800 p-2'>
-          <div className='bg-pink-500 flex h-[400px] flex-col justify-between rounded-md pl-13 p-2'>
+          <div className='bg-gray-200 flex h-[400px] flex-col justify-between rounded-md pl-13 p-2'>
           <Image
-              src='/cta1.jpg'
+              src='/cta_1.jpg'
               alt='Faça uma doação'
               width={300}
               height={300}
-              className='border-8 border-pink-300 p-2 rounded-full'
+              className='border-8 border-pink-600 p-2 rounded-full'
             />
             <div className='space-y-2'>
               <h3 className='font-bold'>Faça uma doação</h3>
@@ -43,13 +43,13 @@ function Patrocinadores() {
         </div>
 
         <div className='overflow-hidden rounded-lg border border-gray-800 p-2'>
-          <div className='bg-pink-500 flex h-[400px] flex-col justify-between rounded-md pr-13 p-2'>
+          <div className='bg-gray-200 flex h-[400px] flex-col justify-between rounded-md pr-13 p-2'>
           <Image
-              src='/cta2.jpg'
+              src='/cta_2.jpg'
               alt='Perguntas Frequentes'
               width={300}
               height={300}
-              className='border-8 border-pink-300 p-2 rounded-full'
+              className='border-8 border-pink-600 p-2 rounded-full'
             />
             <div className='space-y-2'>
               <h3 className='font-bold'>Perguntas Frequentes</h3>
@@ -61,13 +61,13 @@ function Patrocinadores() {
         </div>
 
         <div className='overflow-hidden rounded-lg border border-gray-800 p-2'>
-          <div className='bg-pink-500 flex h-[400px] flex-col justify-between rounded-md p-2'>
+          <div className='bg-gray-200 flex h-[400px] flex-col justify-between rounded-md p-2'>
           <Image
-              src='/cta3.jpg'
+              src='/cta_3.jpg'
               alt='Patrocínio'
               width={300}
               height={300}
-              className='border-8 border-pink-300 p-2 rounded-full'
+              className='md:justify-center md:justify-items-center md:items-center border-8 border-pink-600 p-2 rounded-full'
             />
             <div className='space-y-2'>
               <h3 className='font-bold'>Patrocínio</h3>
@@ -79,13 +79,13 @@ function Patrocinadores() {
         </div>
 
         <div className='overflow-hidden rounded-lg border border-gray-800 p-2'>
-          <div className='bg-pink-500 flex h-[400px] flex-col justify-between rounded-md p-3'>
+          <div className='bg-gray-200 flex h-[400px] flex-col justify-between rounded-md p-3'>
             <Image
-              src='/cta3.jpg'
+              src='/cta_3.jpg'
               alt='Patrocínio'
               width={300}
               height={300}
-              className='border-8 border-pink-300 p-2 rounded-full'
+              className='md:justify-center md:justify-items-center md:items-center border-8 border-pink-600 p-2 rounded-full'
             />
             <div className='space-y-2'>
               <h3 className='font-bold'>Patrocínar em Folha</h3>
