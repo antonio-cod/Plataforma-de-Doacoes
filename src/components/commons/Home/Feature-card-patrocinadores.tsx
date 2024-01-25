@@ -90,7 +90,7 @@ function Patrocinadores() {
             <div className='space-y-2'>
               <h3 className='font-bold'>Doação em Folha</h3>
               <p className={`${roboto.className} mb-12`}>
-              Seus funcionarios podem fazer doações com desconto na folha de pagamento.
+              Seus funcionários podem fazer doações com desconto na folha de pagamento.
               </p>
             </div>
           </div>
