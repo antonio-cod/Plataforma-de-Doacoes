@@ -88,9 +88,9 @@ function Patrocinadores() {
               className='md:justify-center md:justify-items-center md:items-center border-8 border-pink-600 p-2 rounded-full'
             />
             <div className='space-y-2'>
-              <h3 className='font-bold'>Patrocínar em Folha</h3>
+              <h3 className='font-bold'>Doação em Folha</h3>
               <p className={`${roboto.className} mb-12`}>
-              A sua marca e a sua empresa serão muito bem vindas como patrocinadoras.
+              Seus funcionarios podem fazer doações com desconto na folha de pagamento.
               </p>
             </div>
           </div>
@@ -100,3 +100,4 @@ function Patrocinadores() {
   );
 }
 export default Patrocinadores;
+6
